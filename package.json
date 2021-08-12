@@ -1,0 +1,30 @@
+{
+  "name": "stimulus-mmenu",
+  "version": "1.0.0",
+  "description": "Stimulus controller for mmenu-js library",
+  "repository": "git@github.com:survos/stimulus-mmenu.git",
+  "author": "Tac Tacelosky <tacman@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "babel src --out-dir dist --presets @babel/preset-env --plugins=@babel/proposal-class-properties",
+    "prepare": "yarn run build"
+  },
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "7.14.3",
+    "@babel/plugin-syntax-class-properties": "7.12.13",
+    "@babel/preset-env": "^7.14.2",
+    "core-js": "^3.15.2",
+    "mmenu-js": "^8.5.24",
+    "np": "^7.5.0",
+    "prettier-standard": "16.3.0",
+    "stimulus": "^2.0.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.3.4"
+  },
+  "peerDependencies": {
+    "stimulus": "^2.0.0"
+  }
+}
